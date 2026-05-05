@@ -1,0 +1,12 @@
+body, p, h1 {
+    background-color: black;
+    color: whitesmoke;
+}  
+
+.zdjecie-glowne {
+    max-height: 200px;
+}
+
+
+
+
