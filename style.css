@@ -145,10 +145,10 @@
 
 
 .square-div {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 0px 40px;
 }
 
 .square {
@@ -160,24 +160,13 @@
     border: 2px solid gray;
     border-radius: 10px;
     padding: 15px;
-
     box-sizing: border-box;
-
-    /* DESKTOP = 3 w rzędzie */
-    flex: 0 0 calc((100% - 30px) / 3);
 }
 
-/* TABLET = 2 w rzędzie */
-@media (max-width: 900px) {
-    .square {
-        flex: 0 0 calc((100% - 15px) / 2);
-    }
-}
-
-/* MOBILE = 1 w rzędzie */
-@media (max-width: 600px) {
-    .square {
-        flex: 0 0 100%;
+@media (max-width: 700px) {
+    .square-div {
+        grid-template-columns: 1fr;
+        padding: 0px 30px;
     }
 }
 
@@ -208,7 +197,7 @@
 
         border: 1px solid white;
         border-radius: 10px;
-        box-shadow: 4px 4px 0 white;
+        box-shadow: 2px 2px 0 white;
     }
 
     #YT {
@@ -224,26 +213,7 @@
         background-color: rgb(170, 88, 247);
     }
 
-/* jak pracuję */
 
-    .number {
-        width: 50px;
-        height: 50px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background: orange;
-        color: black;
-
-        font-weight: 700;
-        font-size: 16px;
-
-        border: 1px solid white;
-        border-radius: 25px;
-        box-shadow: 4px 4px 0 white;
-    }
 
 /* kontakt */
 
@@ -312,3 +282,139 @@
 /*timeline*/
 
 
+
+.blue-bg {
+  background-color: #4D4545;
+  color: #ED8D8D;
+  height: 100%;
+}
+
+.circle {
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: orange;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.how-i-work {
+  padding: 0 30px;
+}
+
+.how-i-work .row {
+  display: flex;
+}
+
+.how-i-work .col-2 {
+  flex: 0 0 16.666%;
+  max-width: 16.666%;
+}
+
+.how-i-work .col-8 {
+  flex: 1;
+}
+
+.how-it-works.row {
+  display: flex;
+}
+.how-it-works.row .col-2 {
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px dotted orange;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: 50%;
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border: none;
+  border-top: 3px dotted orange;
+  margin: 0;
+  top: 20px;
+  position: relative;
+}
+.timeline .col-2 {
+  position: relative;
+}
+.timeline .corner {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+}
+
+/* Z góry → w prawo */
+.timeline .top-right {
+  border-left: 3px dotted orange;
+  border-bottom: 3px dotted orange;
+  border-bottom-left-radius: 15px;
+  top: 0;
+  left: 50%;
+}
+/* Z lewej → w dół */
+.timeline .left-bottom {
+  border-top: 3px dotted orange;
+  border-right: 3px dotted orange;
+  border-top-right-radius: 15px;
+  top: 50%;
+  left: 0;
+}
+/* Z góry → w lewo */
+.timeline .top-left {
+  border-right: 3px dotted orange;
+  border-bottom: 3px dotted orange;
+  border-bottom-right-radius: 15px;
+  top: 0;
+  left: 0;
+}
+/* Z prawej → w dół */
+.timeline .right-bottom {
+  border-top: 3px dotted orange;
+  border-left: 3px dotted orange;
+  border-top-left-radius: 15px;
+  top: 50%;
+  left: 50%;
+}
+
+.text-right { text-align: right; }
+
+/* Content box w item rows */
+.how-it-works.row .col-8 {
+  padding: 10px 0px;
+}
+
+/* Mobile: zachowaj naprzemienność jak desktop */
+@media (max-width: 600px) {
+  .how-it-works.row {
+    align-items: center;
+  }
+}
