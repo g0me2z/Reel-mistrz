@@ -1,234 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reel Mistrz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container"> 
+<div class="container">
+
     <!-- NAVBAR -->
-
-    <nav>
-        <div class="logo">
-            <img src="img/logo.png" alt="logo">
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="#">Oferta</a></li>
-            <li><a href="#">O mnie</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </nav>
-
-
-    <!-- HERO SECTION -->
-   
-    <div class="hero">
-        <div class="hero-left">
-            <h1>Wideo, które buduje Twoją markę</h1>
-            <p>Tworzę wideo, które realnie wspierają rozwój Twojej marki</p>
-
-            <div class="butons">
-                <button id="oferta">Oferta</button>
-                <button id="zapytaj">Zapytaj</button>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
             </div>
+            <ul class="nav-links">
+                <li><a href="#">Oferta</a></li>
+                <li><a href="#">O mnie</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        </div>
+    <main>
 
-        <div class="hero-right">
-        <img src="img/hero_pic.png" alt="zdjecie-glowne" class="zdjecie-glowne">
-        </div>
-    </div>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-left">
+                <h1>Wideo, które buduje Twoją markę</h1>
+                <p>Tworzę wideo, które realnie wspierają rozwój Twojej marki</p>
+                <div class="buttons">
+                    <button id="oferta">Oferta</button>
+                    <button id="zapytaj">Zapytaj</button>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="img/hero_pic.png" alt="zdjecie-glowne" class="zdjecie-glowne">
+            </div>
+        </section>
 
         <!-- CO MONTUJE -->
+        <section class="what-i-edit">
+            <h4>co montuje</h4>
+            <h2>Jeden montażysta. Nieskończone możliwości publikacji.</h2>
 
-    <div class="what-i-edit">
-        <h4>co montuje</h4>
-        <h2>Jeden montażysta. Nieskończone możliwości publikacji.</h2>
+            <div class="square-div">
+                <div class="square">
+                    <div class="card-header">
+                        <div class="icon" id="IG">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <circle cx="12" cy="12" r="5"/>
+                                <circle cx="17.5" cy="6.5" r="1.2" fill="white" stroke="none"/>
+                            </svg>
+                        </div>
+                        <h3>Instagram</h3>
+                    </div>
+                    <p>Dynamiczne rolki, stories oraz krótkie formy video, które przyciągają uwagę i zwiększają zaangażowanie odbiorców. Dodaję napisy, efekty, muzykę i odpowiednie tempo montażu dopasowane do stylu marki.</p>
+                </div>
 
-        <div class="square-div">
-            <div class="square">
-                <div class="icon" id="IG">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-        <circle cx="12" cy="12" r="5"/>
-        <circle cx="17.5" cy="6.5" r="1.2" fill="white" stroke="none"/>
-    </svg>
+                <div class="square">
+                    <div class="card-header">
+                        <div class="icon" id="TIKTOK">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
+                            </svg>
+                        </div>
+                        <h3>TikTok</h3>
+                    </div>
+                    <p>Krótkie, szybkie i angażujące materiały stworzone pod algorytm. Stawiam na dynamiczne cięcia, trendy, storytelling i zatrzymanie uwagi już od pierwszych sekund.</p>
+                </div>
+
+                <div class="square">
+                    <div class="card-header">
+                        <div class="icon" id="YT">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                                <polygon points="6,4 20,12 6,20"/>
+                            </svg>
+                        </div>
+                        <h3>YouTube</h3>
+                    </div>
+                    <p>Od vlogów i materiałów edukacyjnych po content lifestyle, talking head czy materiały reklamowe. Dbam o płynność, narrację, pacing oraz profesjonalny wygląd video.</p>
+                </div>
+
+                <div class="square">
+                    <div class="card-header">
+                        <div class="icon" id="podcast">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="2" width="6" height="11" rx="3"/>
+                                <path d="M5 10a7 7 0 0 0 14 0"/>
+                                <line x1="12" y1="19" x2="12" y2="22"/>
+                                <line x1="9" y1="22" x2="15" y2="22"/>
+                            </svg>
+                        </div>
+                        <h3>Podcast</h3>
+                    </div>
+                    <p>Podcasty video - usuwam błędy, poprawiam dynamikę rozmowy, dodaję intro/outro, napisy, przebitki oraz elementy wizualne, które podnoszą jakość całego materiału.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- JAK PRACUJĘ -->
+        <section class="how-i-work">
+            <h4>jak pracuję</h4>
+            <h2>Od surowego materiału do wciągającego wideo w 48 godzin</h2>
+
+            <!-- ITEM 1: LEFT -->
+            <div class="row how-it-works">
+                <div class="col-2 bottom">
+                    <div class="circle">01</div>
+                </div>
+                <div class="col-8">
+                    <h3>Poznanie potrzeb</h3>
+                    <p>Na początku omawiamy Twoją wizję, cel oraz grupę odbiorców. Ustalamy styl montażu, format video i wszystkie szczegóły.</p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <!-- CONNECTOR L→R -->
+            <div class="row timeline">
+                <div class="col-2"><div class="corner top-right"></div></div>
+                <div class="col-8"><hr/></div>
+                <div class="col-2"><div class="corner left-bottom"></div></div>
+            </div>
+
+            <!-- ITEM 2: RIGHT -->
+            <div class="row how-it-works">
+                <div class="col-2"></div>
+                <div class="col-8 text-right">
+                    <h3>Wysyłasz pliki</h3>
+                    <p>Wysyłasz nagrania, logo oraz ewentualne inspiracje za pośrednictwem chmury.</p>
+                </div>
+                <div class="col-2 full">
+                    <div class="circle">02</div>
+                </div>
+            </div>
+
+            <!-- CONNECTOR R→L -->
+            <div class="row timeline">
+                <div class="col-2"><div class="corner right-bottom"></div></div>
+                <div class="col-8"><hr/></div>
+                <div class="col-2"><div class="corner top-left"></div></div>
+            </div>
+
+            <!-- ITEM 3: LEFT -->
+            <div class="row how-it-works">
+                <div class="col-2 full">
+                    <div class="circle">03</div>
+                </div>
+                <div class="col-8">
+                    <h3>Pierwszy montaż</h3>
+                    <p>Dobieram ujęcia, muzykę, tempo, napisy, efekty i całą narrację tak, aby video było dynamiczne i angażujące.</p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <!-- CONNECTOR L→R -->
+            <div class="row timeline">
+                <div class="col-2"><div class="corner top-right"></div></div>
+                <div class="col-8"><hr/></div>
+                <div class="col-2"><div class="corner left-bottom"></div></div>
+            </div>
+
+            <!-- ITEM 4: RIGHT -->
+            <div class="row how-it-works">
+                <div class="col-2"></div>
+                <div class="col-8 text-right">
+                    <h3>Poprawki</h3>
+                    <p>Otrzymujesz podgląd filmu i przekazujesz uwagi. Wprowadzam poprawki, aby finalny efekt był w pełni zgodny z Twoją wizją.</p>
+                </div>
+                <div class="col-2 full">
+                    <div class="circle">04</div>
+                </div>
+            </div>
+
+            <!-- CONNECTOR R→L -->
+            <div class="row timeline">
+                <div class="col-2"><div class="corner right-bottom"></div></div>
+                <div class="col-8"><hr/></div>
+                <div class="col-2"><div class="corner top-left"></div></div>
+            </div>
+
+            <!-- ITEM 5: LEFT -->
+            <div class="row how-it-works">
+                <div class="col-2 top">
+                    <div class="circle">05</div>
+                </div>
+                <div class="col-8">
+                    <h3>Finalizacja projektu</h3>
+                    <p>Po akceptacji eksportuję gotowy film w odpowiednich formatach i wysyłam link do pobrania.</p>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </section>
+
+        <!-- KONTAKT -->
+        <section class="kontakt">
+            <h2>Gotowy aby <span>rozwinąć swój kanał?</span></h2>
+            <p>Wypełnij formularz, a odezwę się w ciągu 24h.</p>
+
+            <div id="form-status" class="form-status" style="display:none;"></div>
+
+            <form class="contact-form" action="send.php" method="POST">
+                <input type="hidden" name="Typ projektu" id="project-type-field">
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label>Twoje imię</label>
+                        <input type="text" name="Imię" placeholder="np. Jan Kowalski" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Adres email</label>
+                        <input type="email" name="email" placeholder="ty@domena.pl" required id="email-field">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label>Typ projektu</label>
+                    <div class="custom-select" id="projectSelect">
+                        <div class="custom-select-trigger">
+                            <span class="select-value">Wybierz usługę...</span>
+                            <span class="select-arrow">▾</span>
+                        </div>
+                        <ul class="custom-select-options">
+                            <li>Długa forma (vlogi, wywiady)</li>
+                            <li>Krótkie formy (Reels, Shorts)</li>
+                            <li>Animacje i motion graphics</li>
+                            <li>Kurs / materiał edukacyjny</li>
+                            <li>Reklama / materiał dla marki</li>
+                            <li>Inne</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label>Opowiedz mi o projekcie</label>
+                    <textarea name="Wiadomość" placeholder="Cześć, pracuję nad... Moja grupa docelowa to... Mój deadline to..." required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Wyślij wiadomość →</button>
+            </form>
+        </section>
+
+    </main>
+
 </div>
-                <h3>Instagram</h3>
-                <p> Dynamiczne rolki, stories oraz krótkie formy video, które przyciągają uwagę i zwiększają zaangażowanie odbiorców. Dodaję napisy, efekty, muzykę i odpowiednie tempo montażu dopasowane do stylu marki.</p>
-            </div>
 
-             <div class="square">
-                <div class="icon" id="TIKTOK">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
-        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
-    </svg>
-</div>
-                <h3>TikTok</h3>
-                <p> Krótkie, szybkie i angażujące materiały stworzone pod algorytm. Stawiam na dynamiczne cięcia, trendy, storytelling i zatrzymanie uwagi już od pierwszych sekund.</p>
-            </div>
+<script>
+    document.querySelectorAll('.custom-select').forEach(function(select) {
+        var trigger = select.querySelector('.custom-select-trigger');
+        var options = select.querySelectorAll('.custom-select-options li');
 
-            <div class="square">
-                <div class="icon" id="YT">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
-        <polygon points="6,4 20,12 6,20"/>
-    </svg>
-</div>
-                <h3>YouTube</h3>
-                <p>Od vlogów i materiałów edukacyjnych po content lifestyle, talking head czy materiały reklamowe. Dbam o płynność, narrację, pacing oraz profesjonalny wygląd video.</p>
-            </div>
+        trigger.addEventListener('click', function(e) {
+            e.stopPropagation();
+            document.querySelectorAll('.custom-select.open').forEach(function(s) {
+                if (s !== select) s.classList.remove('open');
+            });
+            select.classList.toggle('open');
+        });
 
-            <div class="square">
-                <div class="icon" id="podcast">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="9" y="2" width="6" height="11" rx="3"/>
-        <path d="M5 10a7 7 0 0 0 14 0"/>
-        <line x1="12" y1="19" x2="12" y2="22"/>
-        <line x1="9" y1="22" x2="15" y2="22"/>
-    </svg>
-</div>
-                <h3>Podcast</h3>
-                <p>Podcasty video - usuwam błędy, poprawiam dynamikę rozmowy, dodaję intro/outro, napisy, przebitki oraz elementy wizualne, które podnoszą jakość całego materiału.</p>
-            </div>
-            
-        </div>
-    </div>
+        options.forEach(function(option) {
+            option.addEventListener('click', function() {
+                select.querySelector('.select-value').textContent = option.textContent;
+                select.querySelector('.custom-select-trigger').classList.add('selected');
+                options.forEach(function(o) { o.classList.remove('active'); });
+                option.classList.add('active');
+                select.classList.remove('open');
+                document.getElementById('project-type-field').value = option.textContent;
+            });
+        });
+    });
 
+    document.addEventListener('click', function() {
+        document.querySelectorAll('.custom-select.open').forEach(function(s) {
+            s.classList.remove('open');
+        });
+    });
 
-    <!-- JAK PRACUJE -->
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        var status = params.get('status');
+        if (!status) return;
 
-    <div class="how-i-work">
-        <h4>jak pracuję</h4>
-        <h2>Od surowego materiału do wciągającego wideo w 48 godzin</h2>
-
-        <!-- ITEM 1: LEFT -->
-        <div class="row how-it-works">
-            <div class="col-2 bottom">
-                <div class="circle">01</div>
-            </div>
-            <div class="col-8">
-                <h3>Poznanie potrzeb</h3>
-                <p>Na początku omawiamy Twoją wizję, cel oraz grupę odbiorców. Ustalamy styl montażu, format video i wszystkie szczegóły.</p>
-            </div>
-            <div class="col-2"></div>
-        </div>
-
-        <!-- CONNECTOR L→R -->
-        <div class="row timeline">
-            <div class="col-2"><div class="corner top-right"></div></div>
-            <div class="col-8"><hr/></div>
-            <div class="col-2"><div class="corner left-bottom"></div></div>
-        </div>
-
-        <!-- ITEM 2: RIGHT -->
-        <div class="row how-it-works">
-            <div class="col-2"></div>
-            <div class="col-8 text-right">
-                <h3>Wysyłasz pliki</h3>
-                <p>Wysyłasz nagrania, logo oraz ewentualne inspiracje za pośrednictwem chmury.</p>
-            </div>
-            <div class="col-2 full">
-                <div class="circle">02</div>
-            </div>
-        </div>
-
-        <!-- CONNECTOR R→L -->
-        <div class="row timeline">
-            <div class="col-2"><div class="corner right-bottom"></div></div>
-            <div class="col-8"><hr/></div>
-            <div class="col-2"><div class="corner top-left"></div></div>
-        </div>
-
-        <!-- ITEM 3: LEFT -->
-        <div class="row how-it-works">
-            <div class="col-2 full">
-                <div class="circle">03</div>
-            </div>
-            <div class="col-8">
-                <h3>Pierwszy montaż</h3>
-                <p>Dobieram ujęcia, muzykę, tempo, napisy, efekty i całą narrację tak, aby video było dynamiczne i angażujące.</p>
-            </div>
-            <div class="col-2"></div>
-        </div>
-
-        <!-- CONNECTOR L→R -->
-        <div class="row timeline">
-            <div class="col-2"><div class="corner top-right"></div></div>
-            <div class="col-8"><hr/></div>
-            <div class="col-2"><div class="corner left-bottom"></div></div>
-        </div>
-
-        <!-- ITEM 4: RIGHT -->
-        <div class="row how-it-works">
-            <div class="col-2"></div>
-            <div class="col-8 text-right">
-                <h3>Poprawki</h3>
-                <p>Otrzymujesz podgląd filmu i przekazujesz uwagi. Wprowadzam poprawki, aby finalny efekt był w pełni zgodny z Twoją wizją.</p>
-            </div>
-            <div class="col-2 full">
-                <div class="circle">04</div>
-            </div>
-        </div>
-
-        <!-- CONNECTOR R→L -->
-        <div class="row timeline">
-            <div class="col-2"><div class="corner right-bottom"></div></div>
-            <div class="col-8"><hr/></div>
-            <div class="col-2"><div class="corner top-left"></div></div>
-        </div>
-
-        <!-- ITEM 5: LEFT (ostatni) -->
-        <div class="row how-it-works">
-            <div class="col-2 top">
-                <div class="circle">05</div>
-            </div>
-            <div class="col-8">
-                <h3>Finalizacja projektu</h3>
-                <p>Po akceptacji eksportuję gotowy film w odpowiednich formatach i wysyłam link do pobrania.</p>
-            </div>
-            <div class="col-2"></div>
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-
-    
-    <!-- kontakt -->
-
-<div class="kontakt">
-
-    <h2>Gotowy aby <span>rozwinąć swój kanał?</span></h2>
-
-    <p>Umów się na darmową konsultację. Przejrzymy Twoje materiały i opracujemy plan, który odpowiada Twoim celom. </p>
-
-    <div class="cta-buttons">
-
-        <a href="#" class="cta-primary">Book a free call<span>→</span></a>
-
-        <a href="mailto:kontakt@reelmistrz.pl" class="cta-secondary">✉ kontakt@reelmistrz.pl</a>
-
-    </div>
-
-</div>
-
-
-
-
-<!--TIMELINE-->
-
-
-
-
-
-
+        var el = document.getElementById('form-status');
+        if (status === 'success') {
+            el.textContent = 'Wiadomość została wysłana. Odezwę się wkrótce!';
+            el.classList.add('form-status--success');
+        } else {
+            el.textContent = 'Wystąpił błąd. Spróbuj ponownie lub napisz bezpośrednio na kontakt@reelmistrz.pl';
+            el.classList.add('form-status--error');
+        }
+        el.style.display = 'block';
+        history.replaceState(null, '', window.location.pathname);
+    })();
+</script>
 </body>
 </html>
