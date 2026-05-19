@@ -968,7 +968,18 @@ button:hover {
     color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+    .kontakt-section {
+        padding: 40px 24px;
+    }
+
+    .kontakt {
+        max-width: 420px;
+        padding: 40px 20px;
+        border-radius: 16px;
+        box-shadow: 4px 4px 0 var(--color-accent);
+    }
+
     .form-row {
         grid-template-columns: 1fr;
     }
