@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img">
+  <title>reel mistrz</title>
+  <desc>Logo reel mistrz - dwie nakladajace sie klatki tasmy filmowej z perforacjami i napisami REEL oraz MISTRZ</desc>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bungee&amp;display=swap');
+    .bungee { font-family: 'Bungee', 'Impact', 'Arial Black', sans-serif; font-weight: 400; }
+    .frame { fill: #1A1A1A; stroke: #FFFFFF; stroke-width: 7; stroke-linejoin: round; }
+    .ink { fill: #FFFFFF; }
+  </style>
+
+  <g transform="rotate(-4 240 130)">
+    <rect class="frame" x="80" y="65" width="320" height="130"/>
+    <g class="ink">
+      <rect x="98" y="80" width="14" height="7" rx="1"/>
+      <rect x="124" y="80" width="14" height="7" rx="1"/>
+      <rect x="150" y="80" width="14" height="7" rx="1"/>
+      <rect x="176" y="80" width="14" height="7" rx="1"/>
+      <rect x="202" y="80" width="14" height="7" rx="1"/>
+      <rect x="228" y="80" width="14" height="7" rx="1"/>
+      <rect x="254" y="80" width="14" height="7" rx="1"/>
+      <rect x="280" y="80" width="14" height="7" rx="1"/>
+      <rect x="306" y="80" width="14" height="7" rx="1"/>
+      <rect x="332" y="80" width="14" height="7" rx="1"/>
+      <rect x="358" y="80" width="14" height="7" rx="1"/>
+      <rect x="98" y="173" width="14" height="7" rx="1"/>
+      <rect x="124" y="173" width="14" height="7" rx="1"/>
+      <rect x="150" y="173" width="14" height="7" rx="1"/>
+      <rect x="176" y="173" width="14" height="7" rx="1"/>
+      <rect x="202" y="173" width="14" height="7" rx="1"/>
+      <rect x="228" y="173" width="14" height="7" rx="1"/>
+      <rect x="254" y="173" width="14" height="7" rx="1"/>
+      <rect x="280" y="173" width="14" height="7" rx="1"/>
+      <rect x="306" y="173" width="14" height="7" rx="1"/>
+      <rect x="332" y="173" width="14" height="7" rx="1"/>
+      <rect x="358" y="173" width="14" height="7" rx="1"/>
+    </g>
+    <text x="240" y="161" text-anchor="middle" class="bungee ink" font-size="82">REEL</text>
+  </g>
+
+  <g transform="rotate(4 430 225)">
+    <rect class="frame" x="220" y="160" width="420" height="130"/>
+    <g class="ink">
+      <rect x="240" y="175" width="14" height="7" rx="1"/>
+      <rect x="266" y="175" width="14" height="7" rx="1"/>
+      <rect x="292" y="175" width="14" height="7" rx="1"/>
+      <rect x="318" y="175" width="14" height="7" rx="1"/>
+      <rect x="344" y="175" width="14" height="7" rx="1"/>
+      <rect x="370" y="175" width="14" height="7" rx="1"/>
+      <rect x="396" y="175" width="14" height="7" rx="1"/>
+      <rect x="422" y="175" width="14" height="7" rx="1"/>
+      <rect x="448" y="175" width="14" height="7" rx="1"/>
+      <rect x="474" y="175" width="14" height="7" rx="1"/>
+      <rect x="500" y="175" width="14" height="7" rx="1"/>
+      <rect x="526" y="175" width="14" height="7" rx="1"/>
+      <rect x="552" y="175" width="14" height="7" rx="1"/>
+      <rect x="578" y="175" width="14" height="7" rx="1"/>
+      <rect x="604" y="175" width="14" height="7" rx="1"/>
+      <rect x="240" y="268" width="14" height="7" rx="1"/>
+      <rect x="266" y="268" width="14" height="7" rx="1"/>
+      <rect x="292" y="268" width="14" height="7" rx="1"/>
+      <rect x="318" y="268" width="14" height="7" rx="1"/>
+      <rect x="344" y="268" width="14" height="7" rx="1"/>
+      <rect x="370" y="268" width="14" height="7" rx="1"/>
+      <rect x="396" y="268" width="14" height="7" rx="1"/>
+      <rect x="422" y="268" width="14" height="7" rx="1"/>
+      <rect x="448" y="268" width="14" height="7" rx="1"/>
+      <rect x="474" y="268" width="14" height="7" rx="1"/>
+      <rect x="500" y="268" width="14" height="7" rx="1"/>
+      <rect x="526" y="268" width="14" height="7" rx="1"/>
+      <rect x="552" y="268" width="14" height="7" rx="1"/>
+      <rect x="578" y="268" width="14" height="7" rx="1"/>
+      <rect x="604" y="268" width="14" height="7" rx="1"/>
+    </g>
+    <text x="430" y="256" text-anchor="middle" class="bungee ink" font-size="82">MISTRZ</text>
+  </g>
+
+</svg>

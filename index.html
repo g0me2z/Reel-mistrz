@@ -12,36 +12,46 @@
 <body>
 <div class="container">
 
-    <!-- NAVBAR -->
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.png" alt="logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Oferta</a></li>
-                <li><a href="#">O mnie</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="top-bg">
 
-    <main>
+        <!-- NAVBAR -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Oferta</a></li>
+                    <li><a href="#">O mnie</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+                <a href="#kontakt" class="nav-cta">Napisz do mnie →</a>
+                <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </header>
 
         <!-- HERO -->
         <section class="hero">
             <div class="hero-left">
                 <h1>Wideo, które buduje Twoją markę</h1>
-                <p>Tworzę wideo, które realnie wspierają rozwój Twojej marki</p>
+                <p>Zamienia Twoje nagrania w dynamiczne filmy, które zatrzymują uwagę i napędzają sprzedaż - szybko, regularnie i bez chaosu.</p>
                 <div class="buttons">
                     <button id="oferta">Oferta</button>
-                    <button id="zapytaj">Zapytaj</button>
+                    <a href="#kontakt" id="zapytaj" class="btn">Zapytaj</a>
                 </div>
             </div>
             <div class="hero-right">
                 <img src="img/hero_pic.png" alt="zdjecie-glowne" class="zdjecie-glowne">
             </div>
         </section>
+
+    </div><!-- /.top-bg -->
+
+    <main>
 
         <!-- CO MONTUJE -->
         <section class="what-i-edit">
@@ -198,12 +208,81 @@
             </div>
         </section>
 
+        <!-- OFERTA -->
+        <section class="pricing">
+            <h4>oferta</h4>
+            <h2>Gotowy aby skalować swój content?</h2>
+
+            <div class="pricing-grid">
+
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <p class="pricing-subtitle">Dla indywidualnych twórców i małych firm stawiających pierwsze kroki z wideo.</p>
+                    <div class="pricing-amount">
+                        <span class="pricing-number">4</span>
+                        <span class="pricing-unit">montaże / mies.</span>
+                    </div>
+                    <p class="pricing-price-note">Zapytaj o cenę</p>
+                    <ul class="pricing-features">
+                        <li>4 profesjonalne montaże wideo</li>
+                        <li>Content na social media (Reels, TikTok, YouTube Shorts)</li>
+                        <li>Podstawowy montaż podcastu (2 odcinki)</li>
+                        <li>Planowanie i strategia contentu</li>
+                        <li>3 rundy poprawek</li>
+                        <li>Formaty na wiele platform</li>
+                        <li>Dostawa w 48h</li>
+                    </ul>
+                    <a href="#kontakt" class="pricing-btn">Napisz do mnie →</a>
+                </div>
+
+                <div class="pricing-card pricing-card--featured">
+                    <div class="pricing-badge">Wybór twórców</div>
+                    <h3>Standard</h3>
+                    <p class="pricing-subtitle">Kompleksowe rozwiązanie wideo zaprojektowane, by napędzić rozwój Twojej marki</p>
+                    <div class="pricing-amount">
+                        <span class="pricing-number">10</span>
+                        <span class="pricing-unit">montaży / mies.</span>
+                    </div>
+                    <p class="pricing-price-note">Zapytaj o cenę</p>
+                    <ul class="pricing-features">
+                        <li>10 profesjonalnych montaży wideo</li>
+                        <li>Filmy brand storytelling</li>
+                        <li>Content do prezentacji produktów</li>
+                        <li>Pełny montaż podcastu (4 odcinki)</li>
+                        <li>Badanie trendów i strategia contentu</li>
+                        <li>Nielimitowane poprawki</li>
+                        <li>Dostawa w 7 dni</li>
+                    </ul>
+                    <a href="#kontakt" class="pricing-btn">Napisz do mnie →</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <p class="pricing-subtitle">Kompleksowe rozwiązanie dla marek, które chcą sie skalować.</p>
+                    <div class="pricing-amount">
+                        <span class="pricing-number">20+</span>
+                        <span class="pricing-unit">montaży / mies.</span>
+                    </div>
+                    <p class="pricing-price-note">Zapytaj o cenę</p>
+                    <ul class="pricing-features">
+                        <li>20+ profesjonalnych montaży wideo</li>
+                        <li>Zaawansowany montaż podcastów</li>
+                        <li>Niestandardowe animacje brandingowe</li>
+                        <li>Miesięczne sesje strategiczne</li>
+                    </ul>
+                    <a href="#kontakt" class="pricing-btn">Napisz do mnie →</a>
+                </div>
+
+            </div>
+        </section>
+
         <!-- KONTAKT -->
-        <section class="kontakt">
+        <section class="kontakt-section" id="kontakt">
+        <div class="kontakt">
             <h2>Gotowy aby <span>rozwinąć swój kanał?</span></h2>
             <p>Wypełnij formularz, a odezwę się w ciągu 24h.</p>
 
-            <div id="form-status" class="form-status" style="display:none;"></div>
+            <div id="form-status" class="form-status"></div>
 
             <form class="contact-form" action="send.php" method="POST">
                 <input type="hidden" name="Typ projektu" id="project-type-field">
@@ -215,13 +294,13 @@
                     </div>
                     <div class="form-field">
                         <label>Adres email</label>
-                        <input type="email" name="email" placeholder="ty@domena.pl" required id="email-field">
+                        <input type="email" name="email" placeholder="ty@domena.pl" required>
                     </div>
                 </div>
 
                 <div class="form-field">
                     <label>Typ projektu</label>
-                    <div class="custom-select" id="projectSelect">
+                    <div class="custom-select">
                         <div class="custom-select-trigger">
                             <span class="select-value">Wybierz usługę...</span>
                             <span class="select-arrow">▾</span>
@@ -244,13 +323,33 @@
 
                 <button type="submit" class="form-submit">Wyślij wiadomość →</button>
             </form>
+        </div>
         </section>
 
     </main>
 
 </div>
 
+<a href="#" id="scroll-top" aria-label="Wróć na górę">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
 <script>
+    var hamburger = document.getElementById('nav-hamburger');
+    var navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('open');
+    });
+    navLinks.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('open');
+        });
+    });
+
     document.querySelectorAll('.custom-select').forEach(function(select) {
         var trigger = select.querySelector('.custom-select-trigger');
         var options = select.querySelectorAll('.custom-select-options li');
@@ -297,6 +396,15 @@
         el.style.display = 'block';
         history.replaceState(null, '', window.location.pathname);
     })();
+
+    (function() {
+        var btn = document.getElementById('scroll-top');
+        var trigger = document.querySelector('.what-i-edit');
+        window.addEventListener('scroll', function() {
+            btn.classList.toggle('visible', trigger.getBoundingClientRect().top <= 0);
+        });
+    })();
+
 </script>
 </body>
 </html>
