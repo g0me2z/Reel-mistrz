@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reel Mistrz</title>
+    <meta name="description" content="Profesjonalny montaż wideo dla twórców i marek. Reels, TikTok, YouTube, podcasty. Dostawa w 24–48h.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -18,12 +19,12 @@
         <header>
             <nav>
                 <div class="logo">
-                    <img src="img/logo.svg" alt="logo">
+                    <img src="img/logo.svg" alt="logo" loading="lazy">
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#">Oferta</a></li>
-                    <li><a href="#">O mnie</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#cennik">Oferta</a></li>
+                    <li><a href="#proces">Proces</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
                 <a href="#kontakt" class="nav-cta">Napisz do mnie →</a>
                 <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
@@ -37,15 +38,15 @@
         <!-- HERO -->
         <section class="hero">
             <div class="hero-left">
-                <h1>Wideo, które buduje Twoją markę</h1>
+                <h1>Wideo, które buduje <span>Twoją</span><span> markę</span></h1>
                 <p>Zamienia Twoje nagrania w dynamiczne filmy, które zatrzymują uwagę i napędzają sprzedaż - szybko, regularnie i bez chaosu.</p>
                 <div class="buttons">
-                    <button id="oferta">Oferta</button>
+                    <a href="#cennik" id="oferta" class="btn">Oferta</a>
                     <a href="#kontakt" id="zapytaj" class="btn">Zapytaj</a>
                 </div>
             </div>
             <div class="hero-right">
-                <img src="img/hero_pic.png" alt="zdjecie-glowne" class="zdjecie-glowne">
+                <img src="img/hero_pic.png" alt="Przykładowe wideo marki" fetchpriority="high">
             </div>
         </section>
 
@@ -115,7 +116,7 @@
         </section>
 
         <!-- JAK PRACUJĘ -->
-        <section class="how-i-work">
+        <section class="how-i-work" id="proces">
             <h4>jak pracuję</h4>
             <h2>Od surowego materiału do wciągającego wideo w 48 godzin</h2>
 
@@ -209,68 +210,68 @@
         </section>
 
         <!-- OFERTA -->
-        <section class="pricing">
+        <section class="pricing" id="cennik">
             <h4>oferta</h4>
             <h2>Gotowy aby skalować swój content?</h2>
 
             <div class="pricing-grid">
 
                 <div class="pricing-card">
-                    <h3>Starter</h3>
+                    <h3>Pakiet Lite</h3>
                     <p class="pricing-subtitle">Dla indywidualnych twórców i małych firm stawiających pierwsze kroki z wideo.</p>
-                    <div class="pricing-amount">
-                        <span class="pricing-number">4</span>
-                        <span class="pricing-unit">montaże / mies.</span>
-                    </div>
-                    <p class="pricing-price-note">Zapytaj o cenę</p>
+                    
                     <ul class="pricing-features">
-                        <li>4 profesjonalne montaże wideo</li>
-                        <li>Content na social media (Reels, TikTok, YouTube Shorts)</li>
-                        <li>Podstawowy montaż podcastu (2 odcinki)</li>
-                        <li>Planowanie i strategia contentu</li>
-                        <li>3 rundy poprawek</li>
-                        <li>Formaty na wiele platform</li>
-                        <li>Dostawa w 48h</li>
+                        <li>Dynamiczny montaż bez dłużyzn i zbędnych pauz</li>
+                        <li>Płynne cięcia budujące tempo i utrzymujące uwagę widza</li>
+                        <li>Animowane napisy dopasowane do stylu Twojej marki</li>
+                        <li>Strategiczne zoomy i ruch kadru zwiększające retencję</li>
+                        <li>Nowoczesne przejścia spajające materiał w spójną historię</li>
+                        <li>Dobór muzyki pod klimat i energię filmu</li>
+                        <li>Synchronizacja montażu z rytmem wypowiedzi i muzyki</li>
+                        <li>Korekcja kolorów dla czystego, estetycznego wyglądu</li>
+                        <li>Format zoptymalizowany pod TikTok / Reels / Shorts</li>
                     </ul>
-                    <a href="#kontakt" class="pricing-btn">Napisz do mnie →</a>
+                    <button class="pricing-btn" data-modal="modal-lite">Cennik →</button>
                 </div>
 
                 <div class="pricing-card pricing-card--featured">
                     <div class="pricing-badge">Wybór twórców</div>
-                    <h3>Standard</h3>
-                    <p class="pricing-subtitle">Kompleksowe rozwiązanie wideo zaprojektowane, by napędzić rozwój Twojej marki</p>
-                    <div class="pricing-amount">
-                        <span class="pricing-number">10</span>
-                        <span class="pricing-unit">montaży / mies.</span>
-                    </div>
-                    <p class="pricing-price-note">Zapytaj o cenę</p>
+                    <h3>Pakiet Pro</h3>
+                    <p class="pricing-subtitle">Kompleksowe rozwiązanie wideo zaprojektowane, by napędzić rozwój Twojej marki.</p>
+                    
                     <ul class="pricing-features">
-                        <li>10 profesjonalnych montaży wideo</li>
-                        <li>Filmy brand storytelling</li>
-                        <li>Content do prezentacji produktów</li>
-                        <li>Pełny montaż podcastu (4 odcinki)</li>
-                        <li>Badanie trendów i strategia contentu</li>
-                        <li>Nielimitowane poprawki</li>
-                        <li>Dostawa w 7 dni</li>
+                        <li>Wszystko z pakietu Simple — dopracowane do poziomu premium</li>
+                        <li>Konsultacja przed montażem: jak nagrywać, by materiał wyglądał profesjonalnie</li>
+                        <li>Zaawansowany storytelling zwiększający watch time</li>
+                        <li>Dynamiczne intro i mocniejsze hooki na start filmu</li>
+                        <li>Dedykowane grafiki oraz filmowy B-roll z bibliotek Premium</li>
+                        <li>Zaawansowany sound design budujący emocje i dynamikę</li>
+                        <li>Efekty wizualne podbijające kluczowe momenty wypowiedzi</li>
+                        <li>Profesjonalna stylizacja napisów i elementów graficznych</li>
+                        <li>Dopracowany pacing montażu pod algorytmy social media</li>
                     </ul>
-                    <a href="#kontakt" class="pricing-btn">Napisz do mnie →</a>
+                    <button class="pricing-btn" data-modal="modal-pro">Cennik →</button>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Premium</h3>
-                    <p class="pricing-subtitle">Kompleksowe rozwiązanie dla marek, które chcą sie skalować.</p>
-                    <div class="pricing-amount">
-                        <span class="pricing-number">20+</span>
-                        <span class="pricing-unit">montaży / mies.</span>
-                    </div>
-                    <p class="pricing-price-note">Zapytaj o cenę</p>
+                    <h3>Pakiet Studio</h3>
+                    <p class="pricing-subtitle">Profesjonalny montaż długich form na YouTube i podcastów video</p>
                     <ul class="pricing-features">
-                        <li>20+ profesjonalnych montaży wideo</li>
-                        <li>Zaawansowany montaż podcastów</li>
-                        <li>Niestandardowe animacje brandingowe</li>
-                        <li>Miesięczne sesje strategiczne</li>
+                        <li>Dynamiczny montaż długich materiałów bez dłużyzn i zbędnych przestojów</li>
+                        <li>Profesjonalne czyszczenie audio oraz poprawa jakości dialogów</li>
+                        <li>Płynny storytelling utrzymujący uwagę widza przez cały materiał</li>
+                        <li>Synchronizacja wielu kamer i ścieżek audio</li>
+                        <li>Filmowy B-roll oraz dodatkowe materiały wizualne z bibliotek Premium</li>
+                        <li>Zaawansowany sound design budujący dynamikę i emocje</li>
+                        <li>Animowane napisy, belki informacyjne i elementy brandingowe</li>
+                        <li>Motion Graphics i nowoczesne animacje wspierające narrację</li>
+                        <li>Korekcja kolorów i profesjonalny finalny look materiału</li>
+                        <li>Intro, outro oraz oprawa wizualna dopasowana do marki</li>
+                        <li>Usuwanie powtórzeń, pomyłek, ciszy i zbędnych fragmentów</li>
+                        <li>Eksport zoptymalizowany pod YouTube oraz platformy podcastowe</li>
+                        <li>Możliwość tworzenia shortów promujących odcinek</li>
                     </ul>
-                    <a href="#kontakt" class="pricing-btn">Napisz do mnie →</a>
+                    <button class="pricing-btn" data-modal="modal-studio">Cennik →</button>
                 </div>
 
             </div>
@@ -289,12 +290,12 @@
 
                 <div class="form-row">
                     <div class="form-field">
-                        <label>Twoje imię</label>
-                        <input type="text" name="Imię" placeholder="np. Jan Kowalski" required>
+                        <label for="field-name">Twoje imię</label>
+                        <input type="text" id="field-name" name="Imię" placeholder="np. Jan Kowalski" required>
                     </div>
                     <div class="form-field">
-                        <label>Adres email</label>
-                        <input type="email" name="email" placeholder="ty@domena.pl" required>
+                        <label for="field-email">Adres email</label>
+                        <input type="email" id="field-email" name="email" placeholder="ty@domena.pl" required>
                     </div>
                 </div>
 
@@ -317,8 +318,8 @@
                 </div>
 
                 <div class="form-field">
-                    <label>Opowiedz mi o projekcie</label>
-                    <textarea name="Wiadomość" placeholder="Cześć, pracuję nad... Moja grupa docelowa to... Mój deadline to..." required></textarea>
+                    <label for="field-message">Opowiedz mi o projekcie</label>
+                    <textarea id="field-message" name="Wiadomość" placeholder="Cześć, pracuję nad... Moja grupa docelowa to... Mój deadline to..." required></textarea>
                 </div>
 
                 <button type="submit" class="form-submit">Wyślij wiadomość →</button>
@@ -335,6 +336,61 @@
         <polyline points="18 15 12 9 6 15"/>
     </svg>
 </a>
+
+<!-- MODALS CENNIK -->
+<div class="modal-overlay" id="modal-lite" role="dialog" aria-modal="true" aria-labelledby="modal-lite-title">
+    <div class="modal">
+        <button class="modal-close" aria-label="Zamknij">✕</button>
+        <h3 id="modal-lite-title">Pakiet Lite</h3>
+        <table class="modal-table">
+            <thead><tr><th>Ilość</th><th>Cena</th></tr></thead>
+            <tbody>
+                <tr><td>1 szt.</td><td>od 150 zł</td></tr>
+                <tr><td>4 szt.</td><td>od 520 zł</td></tr>
+                <tr><td>8 szt.</td><td>od 960 zł</td></tr>
+                <tr><td>12 szt.</td><td>od 1 320 zł</td></tr>
+            </tbody>
+        </table>
+        <p class="modal-disclaimer">Podane ceny mają charakter orientacyjny. Ostateczna wycena ustalana jest indywidualnie. Wszystkie kwoty podane są w wartościach netto.</p>
+        <a href="#kontakt" class="modal-cta">Skontaktuj się</a>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-pro" role="dialog" aria-modal="true" aria-labelledby="modal-pro-title">
+    <div class="modal">
+        <button class="modal-close" aria-label="Zamknij">✕</button>
+        <h3 id="modal-pro-title">Pakiet Pro</h3>
+        <table class="modal-table">
+            <thead><tr><th>Ilość</th><th>Cena</th></tr></thead>
+            <tbody>
+                <tr><td>1 szt.</td><td>od 250 zł</td></tr>
+                <tr><td>4 szt.</td><td>od 880 zł</td></tr>
+                <tr><td>8 szt.</td><td>od 1 600 zł</td></tr>
+                <tr><td>12 szt.</td><td>od 2 160 zł</td></tr>
+            </tbody>
+        </table>
+        <p class="modal-disclaimer">Podane ceny mają charakter orientacyjny. Ostateczna wycena ustalana jest indywidualnie. Wszystkie kwoty podane są w wartościach netto.</p>
+        <a href="#kontakt" class="modal-cta">Skontaktuj się</a>
+    </div>
+</div>
+
+<div class="modal-overlay" id="modal-studio" role="dialog" aria-modal="true" aria-labelledby="modal-studio-title">
+    <div class="modal">
+        <button class="modal-close" aria-label="Zamknij">✕</button>
+        <h3 id="modal-studio-title">Pakiet Studio</h3>
+        <table class="modal-table">
+            <thead><tr><th>Długość materiału</th><th>Cena</th></tr></thead>
+            <tbody>
+                <tr><td>do 30 min</td><td>od 400 zł</td></tr>
+                <tr><td>do 60 min</td><td>od 700 zł</td></tr>
+                <tr><td>do 90 min</td><td>od 950 zł</td></tr>
+                <tr><td>do 120 min</td><td>od 1 200 zł</td></tr>
+            </tbody>
+        </table>
+        <p class="modal-disclaimer">Podane ceny mają charakter orientacyjny. Ostateczna wycena ustalana jest indywidualnie. Wszystkie kwoty podane są w wartościach netto.</p>
+        <a href="#kontakt" class="modal-cta">Skontaktuj się</a>
+    </div>
+</div>
 
 <script>
     var hamburger = document.getElementById('nav-hamburger');
@@ -402,6 +458,43 @@
         var trigger = document.querySelector('.what-i-edit');
         window.addEventListener('scroll', function() {
             btn.classList.toggle('visible', trigger.getBoundingClientRect().top <= 0);
+        });
+    })();
+
+    (function() {
+        function openModal(id) {
+            var overlay = document.getElementById(id);
+            if (!overlay) return;
+            overlay.classList.add('active');
+            document.body.classList.add('modal-open');
+        }
+        function closeModal(overlay) {
+            overlay.classList.remove('active');
+            document.body.classList.remove('modal-open');
+        }
+
+        document.querySelectorAll('[data-modal]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                openModal(btn.dataset.modal);
+            });
+        });
+
+        document.querySelectorAll('.modal-overlay').forEach(function(overlay) {
+            overlay.querySelector('.modal-close').addEventListener('click', function() {
+                closeModal(overlay);
+            });
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) closeModal(overlay);
+            });
+            overlay.querySelector('.modal-cta').addEventListener('click', function() {
+                closeModal(overlay);
+            });
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active').forEach(closeModal);
+            }
         });
     })();
 
